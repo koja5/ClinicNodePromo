@@ -1,0 +1,1134 @@
+<body data-bs-spy="scroll" data-bs-target="#navigation" *ngIf="language">
+  <!-- PRELOADER STARTS
+    ========================================================================= -->
+
+  <!-- /.. PRELOADER ENDS
+    ========================================================================= -->
+  <!-- NAVIGATION STARTS
+    ========================================================================= -->
+  <nav
+    id="navigation"
+    class="navbar navbar-expand-lg navbar-light fixed-top bg-light"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"
+        ><img src="assets/imgs/logo-short.png" class="img-fluid" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home"
+              >{{ language.navigationMenuHome }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">{{
+              language.navigationMenuAboutUs
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">{{
+              language.navigationMenuServices
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#type-services">{{
+              language.navigationMenuTypeOfWork
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">{{
+              language.navigationMenuContact
+            }}</a>
+          </li>
+          <li class="nav-item small pt-2 pb-2">
+            <div class="sl-nav">
+              <ul>
+                <li>
+                  <img
+                    *ngIf="selectionLanguage"
+                    class="flag"
+                    src="../assets/imgs/flags/{{ selectionLanguage }}.png"
+                  />
+                  &nbsp;
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="triangle"></div>
+                  <ul *ngIf="chooseLang">
+                    <li
+                      *ngFor="let item of chooseLang"
+                      (click)="changeLanguage(item.code, item.name)"
+                    >
+                      <img
+                        class="flag"
+                        src="../assets/imgs/flags/{{ item.flag }}"
+                      />
+                      <span
+                        class="{{
+                          selectionLanguage == item.code ? 'active' : ''
+                        }}"
+                        >{{ language[item.name] }}</span
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sl-nav large">
+        <ul>
+          <li>
+            <img
+              *ngIf="selectionLanguage"
+              class="flag"
+              src="../assets/imgs/flags/{{ selectionLanguage }}.png"
+            />
+            &nbsp;
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <div class="triangle"></div>
+            <ul *ngIf="chooseLang">
+              <li
+                *ngFor="let item of chooseLang"
+                (click)="changeLanguage(item.code, item.name)"
+              >
+                <img class="flag" src="../assets/imgs/flags/{{ item.flag }}" />
+                <span
+                  class="{{ selectionLanguage == item.code ? 'active' : '' }}"
+                  >{{ language[item.name] }}</span
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVIGATION ENDS
+    ========================================================================= -->
+  <!-- SLIDER STARTS
+    ========================================================================= -->
+  <section id="home">
+    <div id="slider">
+      <div
+        id="rev_slider_24_1_wrapper"
+        class="rev_slider_wrapper fullscreen-container"
+        data-alias="website-intro"
+        data-source="gallery"
+        style="background: #000000; padding: 0px"
+      >
+        <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+        <div
+          id="rev_slider_24_1"
+          class="rev_slider fullscreenbanner tiny_bullet_slider"
+          style="display: none"
+          data-version="5.4.1"
+        >
+          <ul>
+            <!-- SLIDE  -->
+            <li
+              data-index="rs-67"
+              data-transition="zoomout"
+              data-slotamount="default"
+              data-hideafterloop="0"
+              data-hideslideonmobile="off"
+              data-easein="Power4.easeInOut"
+              data-easeout="Power4.easeInOut"
+              data-masterspeed="2000"
+              data-thumb="img/slider/fullscreen/datcolor-60x60.jpg"
+              data-rotate="0"
+              data-fstransition="fade"
+              data-fsmasterspeed="1500"
+              data-fsslotamount="7"
+              data-saveperformance="off"
+              data-title="Intro"
+              data-param1=""
+              data-param2=""
+              data-param3=""
+              data-param4=""
+              data-param5=""
+              data-param6=""
+              data-param7=""
+              data-param8=""
+              data-param9=""
+              data-param10=""
+              data-description=""
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="assets/imgs/slider/1.jpg"
+                alt=""
+                data-bgposition="center center"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+                data-bgparallax="10"
+                class="rev-slidebg"
+                data-no-retina
+              />
+              <!-- LAYERS -->
+              <!-- LAYER NR. 14 -->
+              <div
+                class="tp-caption tp-shape tp-shapewrapper"
+                id="slide-67-layer-1"
+                data-x="['left','left','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['0','0','0','0']"
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-basealign="slide"
+                data-responsive_offset="off"
+                data-responsive="off"
+                data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 18; background-color: rgba(0, 0, 0, 0.4)"
+              ></div>
+              <!-- LAYER NR. 15 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-67-layer-2"
+                data-x="['left','left','center','center']"
+                data-hoffset="['51','51','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['-70','-70','-70','-70']"
+                data-fontsize="['80','80','60','45']"
+                data-lineheight="['80','80','60','45']"
+                data-width="['none','none','550','360']"
+                data-height="none"
+                data-whitespace="['nowrap','nowrap','normal','normal']"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 19;
+                  white-space: nowrap;
+                  font-size: 90px;
+                  line-height: 90px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  letter-spacing: -5px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderFirstTitleFirst }} <br />
+                {{ language.sliderFirstTitleSecond }}
+              </div>
+              <!-- LAYER NR. 16 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-67-layer-3"
+                data-x="['left','left','center','center']"
+                data-hoffset="['50','50','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['90','90','60','30']"
+                data-fontsize="['25','25','25','20']"
+                data-lineheight="['35','35','35','30']"
+                data-width="['500','500','480','360']"
+                data-height="none"
+                data-whitespace="normal"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 20;
+                  min-width: 480px;
+                  max-width: 480px;
+                  white-space: normal;
+                  font-size: 25px;
+                  line-height: 35px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  letter-spacing: 0px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderFirstText }}
+              </div>
+              <!-- LAYER NR. 17 -->
+              <a
+                href="#about"
+                class="tp-caption rev-btn tp-resizeme"
+                id="slide-67-layer-7"
+                data-x="['left','left','center','center']"
+                data-hoffset="['50','50','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['200','200','160','120']"
+                data-width="auto"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="button"
+                data-actions=""
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[20,20,20,20]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[20,20,20,20]"
+                style="
+                  z-index: 21;
+                  min-width: 200px;
+                  max-width: 100%;
+                  white-space: nowrap;
+                  font-size: 18px;
+                  line-height: 60px;
+                  font-weight: 400;
+                  color: rgba(255, 255, 255, 1);
+                  font-family: 'Poppins', sans-serif;
+                  background-color: rgb(0, 123, 255);
+                  border-color: rgba(0, 0, 0, 1);
+                  border-radius: 30px 30px 30px 30px;
+                  outline: none;
+                  box-shadow: none;
+                  box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  cursor: pointer;
+                  text-decoration: none;
+                "
+                >{{ language.sliderButton }}
+              </a>
+            </li>
+            <!-- SLIDE  -->
+            <li
+              data-index="rs-66"
+              data-transition="zoomout"
+              data-slotamount="default"
+              data-hideafterloop="0"
+              data-hideslideonmobile="off"
+              data-easein="Power4.easeInOut"
+              data-easeout="Power4.easeInOut"
+              data-masterspeed="2000"
+              data-thumb="img/slider/fullscreen/datcolor-60x60.jpg"
+              data-rotate="0"
+              data-fstransition="fade"
+              data-fsmasterspeed="1500"
+              data-fsslotamount="7"
+              data-saveperformance="off"
+              data-title="Intro"
+              data-param1=""
+              data-param2=""
+              data-param3=""
+              data-param4=""
+              data-param5=""
+              data-param6=""
+              data-param7=""
+              data-param8=""
+              data-param9=""
+              data-param10=""
+              data-description=""
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="assets/imgs/slider/2.jpg"
+                alt=""
+                data-bgposition="center center"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+                data-bgparallax="10"
+                class="rev-slidebg"
+                data-no-retina
+              />
+              <!-- LAYERS -->
+              <!-- LAYER NR. 31 -->
+              <div
+                class="tp-caption tp-shape tp-shapewrapper"
+                id="slide-66-layer-1"
+                data-x="['left','left','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['0','0','0','0']"
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-basealign="slide"
+                data-responsive_offset="off"
+                data-responsive="off"
+                data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 18; background-color: rgba(0, 0, 0, 0.5)"
+              ></div>
+              <!-- LAYER NR. 32 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-66-layer-2"
+                data-x="['left','left','center','center']"
+                data-hoffset="['51','51','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['-70','-70','-70','-70']"
+                data-fontsize="['80','80','60','45']"
+                data-lineheight="['80','80','60','45']"
+                data-width="['none','none','550','360']"
+                data-height="none"
+                data-whitespace="['nowrap','nowrap','normal','normal']"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 19;
+                  white-space: nowrap;
+                  font-size: 90px;
+                  line-height: 90px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  letter-spacing: -5px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderSecondTitleFirst }} <br />
+                {{ language.sliderSecondTitleSecond }}
+              </div>
+              <!-- LAYER NR. 33 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-66-layer-3"
+                data-x="['left','left','center','center']"
+                data-hoffset="['50','50','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['90','90','60','30']"
+                data-fontsize="['25','25','25','20']"
+                data-lineheight="['35','35','35','30']"
+                data-width="['480','480','480','360']"
+                data-height="none"
+                data-whitespace="normal"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 20;
+                  min-width: 480px;
+                  max-width: 480px;
+                  white-space: normal;
+                  font-size: 25px;
+                  line-height: 35px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  letter-spacing: 0px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderSecondText }}
+              </div>
+              <!-- LAYER NR. 34 -->
+              <a
+                class="tp-caption rev-btn tp-resizeme"
+                href="#about"
+                id="slide-66-layer-7"
+                data-x="['left','left','center','center']"
+                data-hoffset="['50','50','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['200','200','160','120']"
+                data-width="auto"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-type="button"
+                data-actions=""
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
+                data-textAlign="['center','center','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[20,20,20,20]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[20,20,20,20]"
+                style="
+                  z-index: 21;
+                  min-width: 250px;
+                  max-width: 100%;
+                  white-space: nowrap;
+                  font-size: 18px;
+                  line-height: 60px;
+                  font-weight: 400;
+                  color: rgba(255, 255, 255, 1);
+                  font-family: 'Poppins', sans-serif;
+                  background-color: rgb(0, 123, 255);
+                  border-color: rgba(0, 0, 0, 1);
+                  border-radius: 30px 30px 30px 30px;
+                  outline: none;
+                  box-shadow: none;
+                  box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  cursor: pointer;
+                  text-decoration: none;
+                "
+                >{{ language.sliderButton }}
+              </a>
+            </li>
+            <!-- SLIDE  -->
+            <li
+              data-index="rs-68"
+              data-transition="zoomout"
+              data-slotamount="default"
+              data-hideafterloop="0"
+              data-hideslideonmobile="off"
+              data-easein="Power4.easeInOut"
+              data-easeout="Power4.easeInOut"
+              data-masterspeed="2000"
+              data-thumb="img/slider/fullscreen/datcolor-60x60.jpg"
+              data-rotate="0"
+              data-fstransition="fade"
+              data-fsmasterspeed="1500"
+              data-fsslotamount="7"
+              data-saveperformance="off"
+              data-title="Intro"
+              data-param1=""
+              data-param2=""
+              data-param3=""
+              data-param4=""
+              data-param5=""
+              data-param6=""
+              data-param7=""
+              data-param8=""
+              data-param9=""
+              data-param10=""
+              data-description=""
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="assets/imgs/slider/3.jpg"
+                alt=""
+                data-bgposition="center center"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+                data-bgparallax="10"
+                class="rev-slidebg"
+                data-no-retina
+              />
+              <!-- LAYERS -->
+              <!-- LAYER NR. 48 -->
+              <div
+                class="tp-caption tp-shape tp-shapewrapper"
+                id="slide-68-layer-1"
+                data-x="['left','left','center','center']"
+                data-hoffset="['0','0','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['0','0','0','0']"
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-type="shape"
+                data-basealign="slide"
+                data-responsive_offset="off"
+                data-responsive="off"
+                data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                data-textAlign="['inherit','inherit','inherit','inherit']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="z-index: 18; background-color: rgba(0, 0, 0, 0.5)"
+              ></div>
+              <!-- LAYER NR. 49 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-68-layer-2"
+                data-x="['left','left','center','center']"
+                data-hoffset="['51','51','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['-70','-70','-70','-70']"
+                data-fontsize="['80','80','60','45']"
+                data-lineheight="['80','80','60','45']"
+                data-width="['none','none','550','360']"
+                data-height="none"
+                data-whitespace="['nowrap','nowrap','normal','normal']"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 19;
+                  white-space: nowrap;
+                  font-size: 90px;
+                  line-height: 90px;
+                  font-weight: 500;
+                  color: #ffffff;
+                  letter-spacing: -5px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderThreeTitleFirst }} <br />
+                {{ language.sliderThreeTitleSecond }}
+              </div>
+              <!-- LAYER NR. 50 -->
+              <div
+                class="tp-caption tp-resizeme"
+                id="slide-68-layer-3"
+                data-x="['left','left','center','center']"
+                data-hoffset="['50','50','0','0']"
+                data-y="['middle','middle','middle','middle']"
+                data-voffset="['90','90','60','30']"
+                data-fontsize="['25','25','25','20']"
+                data-lineheight="['35','35','35','30']"
+                data-width="['480','480','480','360']"
+                data-height="none"
+                data-whitespace="normal"
+                data-type="text"
+                data-responsive_offset="on"
+                data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['left','left','center','center']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="
+                  z-index: 20;
+                  min-width: 480px;
+                  max-width: 480px;
+                  white-space: normal;
+                  font-size: 25px;
+                  line-height: 35px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  letter-spacing: 0px;
+                  font-family: 'Poppins', sans-serif;
+                "
+              >
+                {{ language.sliderThreeText }}
+              </div>
+            </li>
+          </ul>
+          <div
+            class="tp-bannertimer tp-bottom"
+            style="height: 5px; background: rgb(0, 123, 255)"
+          ></div>
+        </div>
+      </div>
+      <!-- END REVOLUTION SLIDER -->
+    </div>
+  </section>
+  <!-- /.. SLIDER ENDS
+    ========================================================================= -->
+  <!-- ABOUT US STARTS
+    ========================================================================= -->
+  <section class="home-intro light-grey-bg" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="herotext">
+            <h6>/{{ language.aboutUsSubtitle }}</h6>
+            <h2 class="about-us-title">
+              {{ language.aboutUsTitle }}
+            </h2>
+            <h5 class="pt-2">
+              {{ language.aboutUsText }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-12 col-md-4 block">
+          <div class="detail text-center">
+            <div class="icon pb-3">
+              <i class="las la-pen-nib"></i>
+            </div>
+            <h4>{{ language.aboutUsCardOneTitle }}</h4>
+            <p>
+              {{ language.aboutUsCardOneText }}
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 block">
+          <div class="detail text-center">
+            <div class="icon pb-3">
+              <i class="las la-star"></i>
+            </div>
+            <h4>{{ language.aboutUsCardTwoTitle }}</h4>
+            <p>
+              {{ language.aboutUsCardTwoText }}
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 block">
+          <div class="detail text-center">
+            <div class="icon pb-3">
+              <i class="lar la-keyboard"></i>
+            </div>
+            <h4>{{ language.aboutUsCardThreeTitle }}</h4>
+            <p>
+              {{ language.aboutUsCardThreeText }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /. ABOUT US ENDS
+    ========================================================================= -->
+
+  <section class="home-services light-grey-bg" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="herotext text-center">
+            <h6>/{{ language.servicesSubtitle }}</h6>
+            <h2>
+              {{ language.servicesTitle }}
+            </h2>
+            <h5 class="pt-2">
+              {{ language.servicesText }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center pt-5">
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-brush"></i></div>
+          <h2>{{ language.servicesCardOneTitle }}</h2>
+          <p>
+            {{ language.servicesCardOneText }}
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-code"></i></div>
+          <h2>{{ language.servicesCardTwoTitle }}</h2>
+          <p>
+            {{ language.servicesCardTwoText }}
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-dice-six"></i></div>
+          <h2>{{ language.servicesCardThreeTitle }}</h2>
+          <p>
+            {{ language.servicesCardThreeText }}
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-question-circle"></i></div>
+          <h2>{{ language.servicesCardFourTitle }}</h2>
+          <p>
+            {{ language.servicesCardFourText }}
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-tools"></i></div>
+          <h2>{{ language.servicesCardFiveTitle }}</h2>
+          <p>
+            {{ language.servicesCardFiveText }}
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 block">
+          <div class="icon"><i class="las la-mobile"></i></div>
+          <h2>{{ language.servicesCardSixTitle }}</h2>
+          <p>
+            {{ language.servicesCardSixText }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES STARTS
+    ========================================================================= -->
+  <section class="home-services" id="type-services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-5">
+          <div class="herotext text-center">
+            <h6>/{{ language.typeOfWorkSubtitle }}</h6>
+            <h2>
+              {{ language.typeOfWorkTitle }}
+            </h2>
+            <h5 class="pt-2">
+              {{ language.typeOfWorkText }}
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="services-carousel text-center row">
+        <div class="col-xs-12 col-md-4">
+          <div class="pic pb-4 p-1">
+            <img src="assets/imgs/services/1.jpg" class="img-fluid" />
+          </div>
+          <h2 class="pt-3">{{ language.typeOfWorkCardOneTitle }}</h2>
+          <p class="pt-2 ps-3 pe-3">
+            {{ language.typeOfWorkCardOneText }}
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="pic pb-4 p-1">
+            <img src="assets/imgs/services/2.jpg" class="img-fluid" />
+          </div>
+          <h2 class="pt-3">{{ language.typeOfWorkCardTwoTitle }}</h2>
+          <p class="pt-2 ps-3 pe-3">
+            {{ language.typeOfWorkCardTwoText }}
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="pic pb-4 p-1">
+            <img src="assets/imgs/services/3.jpg" class="img-fluid" />
+          </div>
+          <h2 class="pt-3">{{ language.typeOfWorkCardThreeTitle }}</h2>
+          <p class="pt-2 ps-3 pe-3">
+            {{ language.typeOfWorkCardThreeText }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.. SERVICES ENDS
+    ========================================================================= -->
+  <!-- FEATURES STARTS
+    ========================================================================= -->
+  <section class="home-features light-grey-bg">
+    <div class="container">
+      <div class="row align-items-md-center">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+          <img src="assets/imgs/features/big.jpg" class="img-fluid" alt="" />
+        </div>
+        <div
+          class="col-12 col-lg-6 col-xl-6 col-xxl-6 ps-lg-5 ps-3 pe-3 pt-5 pt-lg-0"
+        >
+          <div class="block">
+            <div class="herotext" style="width: 100%">
+              <h6>/{{ language.principlesOfWorkSubtitle }}</h6>
+              <h2>{{ language.principlesOfWorkTitle }}</h2>
+              <h5 class="pt-2">
+                {{ language.principlesOfWorkText }}
+              </h5>
+            </div>
+            <div class="accordion pt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    {{ language.principlesOfWorkCardOneTitle }}
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    {{ language.principlesOfWorkCardOneText }}
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    {{ language.principlesOfWorkCardTwoTitle }}
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    {{ language.principlesOfWorkCardTwoText }}
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    {{ language.principlesOfWorkCardThreeTitle }}
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    {{ language.principlesOfWorkCardThreeText }}
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    {{ language.principlesOfWorkCardFourTitle }}
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    {{ language.principlesOfWorkCardFourText }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.. FEATURES ENDS
+    ========================================================================= -->
+
+  <!-- TESTIMONIALS STARTS
+    ========================================================================= -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="row align-items-start align-items-md-center">
+        <div class="col-12 col-lg-5 col-xl-5 testimonials-block">
+          <div class="herotext">
+            <h6>/{{ language.clientsSubtitle }}</h6>
+            <h2>{{ language.clientsTitle }}</h2>
+          </div>
+          <div class="testimonials-carousel pt-4">
+            <div class="testimonial">
+              <div class="d-flex align-items-center">
+                <div class="pic">
+                  <img
+                    src="assets/imgs/testimonials/1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="detail">
+                  <div class="name">{{ language.clientPeopleOneName }}</div>
+                  <div class="designation">
+                    {{ language.clientPeopleOneCountry }}
+                  </div>
+                </div>
+              </div>
+              <p class="pt-3">
+                {{ language.clientsCardOneText }}
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="d-flex align-items-center">
+                <div class="pic">
+                  <img
+                    src="assets/imgs/testimonials/2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="detail">
+                  <div class="name">{{ language.clientPeopleTwoName }}</div>
+                  <div class="designation">
+                    {{ language.clientPeopleTwoCountry }}
+                  </div>
+                </div>
+              </div>
+              <p class="pt-3">
+                {{ language.clientsCardTwoText }}
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="d-flex align-items-center">
+                <div class="pic">
+                  <img
+                    src="assets/imgs/testimonials/3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="detail">
+                  <div class="name">{{ language.clientPeopleThreeName }}</div>
+                  <div class="designation">
+                    {{ language.clientPeopleThreeCountry }}
+                  </div>
+                </div>
+              </div>
+              <p class="pt-3">
+                {{ language.clientsCardThreeText }}
+              </p>
+            </div>
+          </div>
+          <!--<div class="slider-counter"></div>-->
+        </div>
+        <div class="col-12 col-lg-6 col-xl-6 offset-lg-1 offset-xl-1">
+          <img
+            src="assets/imgs/testimonials/big.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.. TESTIMONIALS ENDS
+    ========================================================================= -->
+
+  <!-- JOIN US STARTS
+    ========================================================================= -->
+  <section class="join-us primary-bg text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="herotext">
+            <h6>/{{ language.joinUsSubtitle }}</h6>
+            <h2>{{ language.joinUsTitle }}</h2>
+          </div>
+          <ul class="pt-4">
+            <li>
+              <a href="#services" class="btn btn-secondary">{{
+                language.joinUsButtonOne
+              }}</a>
+            </li>
+            <li>
+              <a href="#contact" class="btn-transparent btn-secondary">{{
+                language.joinUsButtonTwo
+              }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.. JOIN US ENDS
+    ========================================================================= -->
+  <!-- CONTACT US STARTS
+    ========================================================================= -->
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <div class="herotext pb-4">
+            <h6>{{ language.contactSubtitle }}</h6>
+            <h2>{{ language.contactTitle }}</h2>
+          </div>
+          <div class="row pt-4">
+            <address class="col-xs-12 col-md-6 text-center">
+              <div class="detail">
+                <i class="las la-phone"></i>
+                <div class="heading">{{ language.contactCallUs }}</div>
+                <a href="tel:{{ language.contactTelephone }}">{{
+                  language.contactTelephone
+                }}</a>
+              </div>
+            </address>
+            <address class="col-xs-12 col-md-6 text-center">
+              <div class="detail">
+                <i class="las la-envelope-open"></i>
+                <div class="heading">{{ language.contactWriteUs }}</div>
+                <a href="mailto:info@thisone.com" target="_blank">{{
+                  language.contactEmail
+                }}</a>
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.. CONTACT US ENDS
+    ========================================================================= -->
+
+  <!-- FOOTER STARTS
+    ========================================================================= -->
+  <footer class="dark-grey-bg text-center">
+    <div class="container-fluid">
+      <div class="row pt-3 copyright">
+        <div class="col-12">
+          <p class="mb-lg-0 mb-md-0 white-color">
+            © Copyright 2022. Made with
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="heart"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="14"
+              class="svg-inline--fa fa-heart fa-w-16"
+            >
+              <path
+                fill="currentColor"
+                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+              ></path>
+            </svg>
+            from Serbia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /.. FOOTER ENDS
+    ========================================================================= -->
+  <!-- TO TOP STARTS
+    ========================================================================= -->
+  <a href="#home" class="back-to-top"><i class="las la-angle-up"></i></a>
+  <!-- /.. TO TOP ENDS
+    ========================================================================= -->
+  <!-- INCLUD ALL JS FILES 
+    ========================================================================= -->
+  <!--JQUERY MIN JS-->
+</body>
